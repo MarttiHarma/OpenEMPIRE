@@ -1456,3 +1456,8 @@ def run_empire(name, tab_file_path: Path, result_file_path: Path, scenario_data_
                     my_string.extend([value(instance.dual[instance.emission_cap[i,w]]/(instance.operationalDiscountrate*instance.sceProbab[w]*1e6)),value(instance.CO2cap[i]*1e6)])
                 else:
                     my_string.extend([value(instance.CO2price[i]),0])
+
+
+
+    ####################################################################
+    #run shell script which transfers files to computer

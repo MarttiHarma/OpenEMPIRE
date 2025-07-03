@@ -47,6 +47,7 @@ def get_active_results(folders: list[Path]) -> Path:
     """
 
     valid_result_folders_dict = get_valid_data_folders(folders)
+    print(valid_result_folders_dict, 'these are valid folders')
 
     ### Get path to results folder
     results_folder_relative = st.selectbox("Choose results: ", sorted(list(valid_result_folders_dict.keys())))

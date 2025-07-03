@@ -1,9 +1,9 @@
 {
   "Solstorm": {
-    "REMOTE_USER": "user",
-    "REMOTE_SERVER": "ip.ip.ip.ip",
-    "REMOTE_DIR": "/path/to/OpenEMPIRE",
-    "SCHEDULER_SCRIPT": "./scripts/run_analysis_sge.sh"
+    "REMOTE_USER": "marttih",
+    "REMOTE_SERVER": "login.solstorm.ntnu.no",
+    "REMOTE_DIR": "/home/marttih/empire/OpenEMPIRE",
+    "SCHEDULER_SCRIPT": "./scripts/run_test_sge.sh"
   },
   "IDUN": {
     "REMOTE_USER": "user",

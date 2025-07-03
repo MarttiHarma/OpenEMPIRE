@@ -235,7 +235,7 @@ class EmpireOutputClient:
 
 
 if __name__ == "__main__":
-    result_dir = Path.cwd() / "Results/norway_analysis/ncc3000.0_na0.95_w0.0_wog0.0"
+    result_dir = Path.cwd() / "Results/run_analysis/ncc3000.0_na0.75_w0.0_wog0.0_pFalse"
     output_dir = result_dir / "Output"
 
     client = EmpireOutputClient(output_path=output_dir)

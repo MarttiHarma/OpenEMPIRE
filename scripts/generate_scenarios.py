@@ -19,7 +19,7 @@ parser.add_argument("-f", "--force", help="Force new scenarios even if old scena
 
 args = parser.parse_args()
 
-config_path = Path("config/testmyrun.yaml") if args.version == "test" else Path("config/myrun.yaml")
+config_path = Path("config/testmyrun.yaml") if args.version == "test" else Path("config/run.yaml")
 config = read_config_file(config_path)
 empire_config = EmpireConfiguration.from_dict(config=config)
 

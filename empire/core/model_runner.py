@@ -150,6 +150,8 @@ def run_empire_model(
             OUT_OF_SAMPLE=OUT_OF_SAMPLE, 
             sample_file_path=sample_file_path
             )
+    else:
+        obj_value = 'test'
 
     config_path = run_config.dataset_path / "config.txt"
     logger.info("Writing config to: %s", config_path)

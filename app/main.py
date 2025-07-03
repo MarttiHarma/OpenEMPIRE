@@ -21,7 +21,8 @@ def app():
     """
     )
 
-    result_folder = Path.cwd() / "Results"
+    result_folder = Path.cwd().parent / "Results"
+    print(result_folder, 'results are here')
 
     other_results = st.sidebar.text_input("Absolute path to other folder with results:")
 

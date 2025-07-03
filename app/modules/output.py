@@ -48,7 +48,7 @@ def output(active_results: Path) -> None:
     input_client = get_input_client(active_results)
 
     # config_file = active_results / "Input/Xlsx/config.txt"
-    config_file = Path.cwd() / "config/run.yaml"
+    config_file = Path.cwd().parent / "config/run.yaml"
     config = read_config_file(config_file)
     empire_config = EmpireConfiguration.from_dict(config=config)
 

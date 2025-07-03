@@ -1,4 +1,5 @@
 #!/bin/bash
+set -x
 ncc=$1
 na=$2
 w=$3
@@ -26,22 +27,10 @@ echo $CONDA_DEFAULT_ENV
 module load gurobi/9.5
 echo "testing gurobi"
 pyomo help --version
+# Print which node we are running on
+echo "Running on compute node: $(hostname)"
 
-if [ "$p" == "true" ]; then
-    echo "Protective case"
-    python scripts/run_analysis.py \
-        --nuclear-capital-cost $ncc \
-        --nuclear-availability $na \
-        --max-onshore-wind-norway $w \
-        --max-offshore-wind-grounded-norway $w \
-        -p
-else
-    echo "Not protective case"
-    python scripts/run_analysis.py \
-        --nuclear-capital-cost $ncc \
-        --nuclear-availability $na \
-        --max-onshore-wind-norway $w \
-        --max-offshore-wind-grounded-norway $w
-fi
+python scripts/run.py -d test
+
 
 echo "Done with starting bash script!"
