@@ -55,6 +55,8 @@ echo "Transfer complete!"
 ssh $REMOTE_USER@$REMOTE_SERVER "chmod +x $REMOTE_DIR/scripts/*"
 echo "Made files in the scripts folder executable"
 
+#
+ssh $REMOTE_USER@$REMOTE_SERVER "$REMOTE_DIR/scripts/filter_idle_hosts.sh 'compute-4-50|compute-4-51|compute-4-52|compute-4-53|compute-4-54|compute-4-55|compute-4-56|compute-4-57|compute-4-58'"
 
 if [[ $CLUSTER = "Solstorm" ]]; then
     echo "Starting SGE job!"
