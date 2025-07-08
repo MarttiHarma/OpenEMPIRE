@@ -26,6 +26,7 @@ def app():
     )
 
     result_folder = Path.cwd() / "Results_HPC"                                       #added _HPC
+    print('Location of results: ',result_folder)
 
     other_results = st.sidebar.text_input("Absolute path to other folder with results:")
 

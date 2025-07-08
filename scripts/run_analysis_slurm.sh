@@ -27,9 +27,9 @@ if [[ "$CONDA_DEFAULT_ENV" != "empire_env" ]]; then
 fi
 
 # Define different values for arguments
-NUCLEAR_CAPITAL_COSTS=("8000")   #"3000" "4000" "5000" "6000" "7000" 
-NUCLEAR_AVAILABILITIES=("0.95")  #"0.75" 
-MAX_WINDS=("200000") #"0" 
+NUCLEAR_CAPITAL_COSTS=("3000" "4000" "5000" "6000" "7000" "8000")
+NUCLEAR_AVAILABILITIES=("0.75" "0.95")
+MAX_WINDS=("0" "200000")
 
 # Loop and run the script with different values
 for ncc in "${NUCLEAR_CAPITAL_COSTS[@]}"; do

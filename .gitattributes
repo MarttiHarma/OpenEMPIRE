@@ -2,3 +2,7 @@
 *.csv filter=lfs diff=lfs merge=lfs -text
 * text=auto eol=lf
 
+*.docx filter=lfs diff=lfs merge=lfs -text
+*.pdf filter=lfs diff=lfs merge=lfs -text
+*.sh text eol=lf
+*.py text eol=lf

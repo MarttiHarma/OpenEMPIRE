@@ -18,10 +18,10 @@ fi
 
 
 # Values for the arguments
-NUCLEAR_CAPITAL_COSTS=("8000")    #("3000" "4000" "5000" "6000" "7000")
-NUCLEAR_AVAILABILITIES=("0.95")    #("0.75")
-MAX_WINDS=("200000") #("0") 
-PROTECTIVE=("true")  #("false")
+NUCLEAR_CAPITAL_COSTS=("3000" "4000" "5000" "6000" "7000" "8000")
+NUCLEAR_AVAILABILITIES=("0.75" "0.95")
+MAX_WINDS=("0" "200000")
+PROTECTIVE=("false" "true")
 
 mkdir -p ./hpc_output/
 
@@ -38,11 +38,10 @@ for ncc in "${NUCLEAR_CAPITAL_COSTS[@]}"; do
                     -e ./hpc_output/\
                     -l h_rt=12:00:00 \
                     -l mem_free=150G \
-                    -l hostname="compute-4-51|compute-4-52|compute-4-54|compute-4-55|compute-4-56"\
+                    -l hostname="compute-4-51|compute-4-52|compute-4-53|compute-4-55|compute-4-56" \
                     -pe smp 8 \
                     ./scripts/run_analysis_sge_worker.sh $ncc $na $w $p
             done
         done
     done
 done
-
