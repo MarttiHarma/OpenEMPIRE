@@ -1,0 +1,158 @@
+2025-06-29 13:17:07,118 - empire - INFO - Running analysis with:
+2025-06-29 13:17:07,118 - empire - INFO - Nuclear capital cost: 8000.0
+2025-06-29 13:17:07,118 - empire - INFO - Nuclear availability: 0.95
+2025-06-29 13:17:07,118 - empire - INFO - Max installed onshore wind per elspot area in Norway: 200000.0
+2025-06-29 13:17:07,118 - empire - INFO - Max installed grounded offshore wind per elspot area in Norway: 200000.0
+2025-06-29 13:17:07,118 - empire - INFO - Dataset version: europe_v51
+2025-06-29 13:17:07,644 - empire - INFO - Protective north-sea transmission policy with no collaboration on transmission capacity between countries.
+2025-06-29 13:17:07,669 - empire.input_data_manager - INFO - Setting availability to 0.95 for Nuclear.
+2025-06-29 13:17:07,945 - empire.input_data_manager - INFO - Setting capital cost to 8000.0 for Nuclear.
+2025-06-29 13:17:08,389 - empire.input_data_manager - INFO - Setting max installed capacity to 200000.0 for Wind_onshr in nodes ['NO1', 'NO2', 'NO3', 'NO4', 'NO5'].
+2025-06-29 13:17:08,731 - empire.input_data_manager - INFO - Setting transmission capacity between HollandseeKust and DoggerBank to 0.0
+2025-06-29 13:17:09,246 - empire.input_data_manager - INFO - Setting transmission capacity between Nordsoen and DoggerBank to 0.0
+2025-06-29 13:17:09,821 - empire.input_data_manager - INFO - Setting transmission capacity between SorligeNordsjoII and DoggerBank to 0.0
+2025-06-29 13:17:10,394 - empire.input_data_manager - INFO - Setting transmission capacity between Borssele and EastAnglia to 0.0
+2025-06-29 13:17:10,983 - empire.input_data_manager - INFO - Setting transmission capacity between SorligeNordsjoI and FirthofForth to 0.0
+2025-06-29 13:17:11,572 - empire.input_data_manager - INFO - Setting transmission capacity between Nordsoen and HelgolanderBucht to 0.0
+2025-06-29 13:17:12,167 - empire.input_data_manager - INFO - Setting transmission capacity between SorligeNordsjoI and HelgolanderBucht to 0.0
+2025-06-29 13:17:12,746 - empire.input_data_manager - INFO - Setting transmission capacity between SorligeNordsjoII and HelgolanderBucht to 0.0
+2025-06-29 13:17:13,305 - empire.input_data_manager - INFO - Setting transmission capacity between Borssele and Hornsea to 0.0
+2025-06-29 13:17:13,869 - empire.input_data_manager - INFO - Setting transmission capacity between HollandseeKust and Hornsea to 0.0
+2025-06-29 13:17:14,442 - empire.input_data_manager - INFO - Setting transmission capacity between UtsiraNord and MorayFirth to 0.0
+2025-06-29 13:17:15,030 - empire.input_data_manager - INFO - Setting transmission capacity between Borssele and Norfolk to 0.0
+2025-06-29 13:17:15,596 - empire.input_data_manager - INFO - Setting transmission capacity between HollandseeKust and Norfolk to 0.0
+2025-06-29 13:17:16,161 - empire.input_data_manager - INFO - Setting transmission capacity between HollandseeKust and Belgium to 0.0
+2025-06-29 13:17:16,735 - empire.input_data_manager - INFO - Setting transmission capacity between Hornsea and DoggerBank to 0.0
+2025-06-29 13:17:17,396 - empire.input_data_manager - INFO - Setting transmission capacity between Borssele and Netherlands to 0.0
+2025-06-29 13:17:18,007 - empire.input_data_manager - INFO - Setting transmission capacity between HelgolanderBucht and Netherlands to 0.0
+2025-06-29 13:17:18,618 - empire.input_data_manager - INFO - Setting transmission capacity between SorligeNordsjoI and Nordsoen to 0.0
+2025-06-29 13:17:19,232 - empire.input_data_manager - INFO - Setting transmission capacity between SorligeNordsjoII and Nordsoen to 0.0
+2025-06-29 13:17:19,849 - empire.input_data_manager - INFO - Setting transmission capacity between UtsiraNord and Nordsoen to 0.0
+2025-06-29 13:17:20,467 - empire.input_data_manager - INFO - Setting max installed capacity to 200000.0 for Wind_offshr_grounded in nodes ['NO1', 'NO2', 'NO3', 'NO4', 'NO5'].
+2025-06-29 13:17:20,850 - empire.core.model_runner - INFO - ++++++++
+2025-06-29 13:17:20,850 - empire.core.model_runner - INFO - +EMPIRE+
+2025-06-29 13:17:20,850 - empire.core.model_runner - INFO - ++++++++
+2025-06-29 13:17:20,850 - empire.core.model_runner - INFO - Load Change Module: False
+2025-06-29 13:17:20,850 - empire.core.model_runner - INFO - Solver: Gurobi
+2025-06-29 13:17:20,850 - empire.core.model_runner - INFO - Scenario Generation: True
+2025-06-29 13:17:20,850 - empire.core.model_runner - INFO - ++++++++
+2025-06-29 13:17:20,850 - empire.core.model_runner - INFO - ID: europe_v51_reg24_peak24_sce2_randomSGR_202506291317
+2025-06-29 13:17:20,851 - empire.core.model_runner - INFO - ++++++++
+2025-06-29 13:17:20,851 - empire.core.scenario_random - INFO - Generating random scenarios...
+2025-06-29 13:17:26,166 - empire.core.scenario_random - INFO - Done generating scenarios.
+2025-06-29 13:17:26,343 - empire.core.scenario_random - INFO - Saving 'sampling_key.csv'.
+2025-06-29 13:17:26,348 - empire.core.scenario_random - INFO - Saving 'Stochastic_StochasticAvailability.tab'.
+2025-06-29 13:17:26,598 - empire.core.scenario_random - INFO - Saving 'Stochastic_ElectricLoadRaw.tab'.
+2025-06-29 13:17:26,658 - empire.core.scenario_random - INFO - Saving 'Stochastic_HydroGenMaxSeasonalProduction.tab'.
+2025-06-29 13:17:26,732 - empire.core.reader - INFO - Generating .tab-files...
+2025-06-29 13:17:26,733 - empire.core.reader - INFO - Reading Sets.xlsx
+2025-06-29 13:17:26,825 - empire.core.reader - INFO - Reading Nodes sheet from Sets.xlsx
+2025-06-29 13:17:26,828 - empire.core.reader - INFO - Reading OffshoreNodes sheet from Sets.xlsx
+2025-06-29 13:17:26,854 - empire.core.reader - INFO - Reading Horizon sheet from Sets.xlsx
+2025-06-29 13:17:26,869 - empire.core.reader - INFO - Reading LineType sheet from Sets.xlsx
+2025-06-29 13:17:26,883 - empire.core.reader - INFO - Reading Technology sheet from Sets.xlsx
+2025-06-29 13:17:26,898 - empire.core.reader - INFO - Reading Storage sheet from Sets.xlsx
+2025-06-29 13:17:26,926 - empire.core.reader - INFO - Reading Generators sheet from Sets.xlsx
+2025-06-29 13:17:26,980 - empire.core.reader - INFO - Reading StorageOfNodes sheet from Sets.xlsx
+2025-06-29 13:17:26,995 - empire.core.reader - INFO - Reading GeneratorsOfNode sheet from Sets.xlsx
+2025-06-29 13:17:27,018 - empire.core.reader - INFO - Reading GeneratorsOfTechnology sheet from Sets.xlsx
+2025-06-29 13:17:27,027 - empire.core.reader - INFO - Reading DirectionalLines sheet from Sets.xlsx
+2025-06-29 13:17:27,040 - empire.core.reader - INFO - Reading LineTypeOfDirectionalLines sheet from Sets.xlsx
+2025-06-29 13:17:27,055 - empire.core.reader - INFO - Reading Generator.xlsx
+2025-06-29 13:17:27,236 - empire.core.reader - INFO - Reading FixedOMCosts sheet from Generator.xlsx
+2025-06-29 13:17:27,263 - empire.core.reader - INFO - Reading CapitalCosts sheet from Generator.xlsx
+2025-06-29 13:17:27,280 - empire.core.reader - INFO - Reading VariableOMCosts sheet from Generator.xlsx
+2025-06-29 13:17:27,287 - empire.core.reader - INFO - Reading FuelCosts sheet from Generator.xlsx
+2025-06-29 13:17:27,297 - empire.core.reader - INFO - Reading CCSCostTSVariable sheet from Generator.xlsx
+2025-06-29 13:17:27,311 - empire.core.reader - INFO - Reading Efficiency sheet from Generator.xlsx
+2025-06-29 13:17:27,326 - empire.core.reader - INFO - Reading RefInitialCap sheet from Generator.xlsx
+2025-06-29 13:17:27,346 - empire.core.reader - INFO - Reading ScaleFactorInitialCap sheet from Generator.xlsx
+2025-06-29 13:17:27,362 - empire.core.reader - INFO - Reading InitialCapacity sheet from Generator.xlsx
+2025-06-29 13:17:27,377 - empire.core.reader - INFO - Reading MaxBuiltCapacity sheet from Generator.xlsx
+2025-06-29 13:17:27,393 - empire.core.reader - INFO - Reading MaxInstalledCapacity sheet from Generator.xlsx
+2025-06-29 13:17:27,410 - empire.core.reader - INFO - Reading RampRate sheet from Generator.xlsx
+2025-06-29 13:17:27,427 - empire.core.reader - INFO - Reading GeneratorTypeAvailability sheet from Generator.xlsx
+2025-06-29 13:17:27,440 - empire.core.reader - INFO - Reading CO2Content sheet from Generator.xlsx
+2025-06-29 13:17:27,455 - empire.core.reader - INFO - Reading Lifetime sheet from Generator.xlsx
+2025-06-29 13:17:27,460 - empire.core.reader - INFO - Reading Transmission.xlsx
+2025-06-29 13:17:27,804 - empire.core.reader - INFO - Reading lineEfficiency sheet from Transmission.xlsx
+2025-06-29 13:17:27,834 - empire.core.reader - INFO - Reading MaxInstallCapacityRaw sheet from Transmission.xlsx
+2025-06-29 13:17:27,855 - empire.core.reader - INFO - Reading MaxBuiltCapacity sheet from Transmission.xlsx
+2025-06-29 13:17:27,866 - empire.core.reader - INFO - Reading Length sheet from Transmission.xlsx
+2025-06-29 13:17:27,880 - empire.core.reader - INFO - Reading TypeCapitalCost sheet from Transmission.xlsx
+2025-06-29 13:17:27,890 - empire.core.reader - INFO - Reading TypeFixedOMCost sheet from Transmission.xlsx
+2025-06-29 13:17:27,904 - empire.core.reader - INFO - Reading InitialCapacity sheet from Transmission.xlsx
+2025-06-29 13:17:27,923 - empire.core.reader - INFO - Reading Lifetime sheet from Transmission.xlsx
+2025-06-29 13:17:27,938 - empire.core.reader - INFO - Reading Node.xlsx
+2025-06-29 13:17:27,987 - empire.core.reader - INFO - Reading ElectricAnnualDemand sheet from Node.xlsx
+2025-06-29 13:17:27,998 - empire.core.reader - INFO - Reading NodeLostLoadCost sheet from Node.xlsx
+2025-06-29 13:17:28,014 - empire.core.reader - INFO - Reading HydroGenMaxAnnualProduction sheet from Node.xlsx
+2025-06-29 13:17:28,029 - empire.core.reader - INFO - Reading General.xlsx
+2025-06-29 13:17:28,046 - empire.core.reader - INFO - Reading seasonScale sheet from General.xlsx
+2025-06-29 13:17:28,062 - empire.core.reader - INFO - Reading CO2Cap sheet from General.xlsx
+2025-06-29 13:17:28,067 - empire.core.reader - INFO - Reading CO2Price sheet from General.xlsx
+2025-06-29 13:17:28,083 - empire.core.reader - INFO - Reading Storage.xlsx
+2025-06-29 13:17:28,161 - empire.core.reader - INFO - Reading StorageBleedEfficiency sheet from Storage.xlsx
+2025-06-29 13:17:28,175 - empire.core.reader - INFO - Reading StorageChargeEff sheet from Storage.xlsx
+2025-06-29 13:17:28,189 - empire.core.reader - INFO - Reading StorageDischargeEff sheet from Storage.xlsx
+2025-06-29 13:17:28,203 - empire.core.reader - INFO - Reading StoragePowToEnergy sheet from Storage.xlsx
+2025-06-29 13:17:28,215 - empire.core.reader - INFO - Reading StorageInitialEnergyLevel sheet from Storage.xlsx
+2025-06-29 13:17:28,229 - empire.core.reader - INFO - Reading InitialPowerCapacity sheet from Storage.xlsx
+2025-06-29 13:17:28,246 - empire.core.reader - INFO - Reading PowerCapitalCost sheet from Storage.xlsx
+2025-06-29 13:17:28,255 - empire.core.reader - INFO - Reading PowerFixedOMCost sheet from Storage.xlsx
+2025-06-29 13:17:28,269 - empire.core.reader - INFO - Reading PowerMaxBuiltCapacity sheet from Storage.xlsx
+2025-06-29 13:17:28,284 - empire.core.reader - INFO - Reading EnergyCapitalCost sheet from Storage.xlsx
+2025-06-29 13:17:28,298 - empire.core.reader - INFO - Reading EnergyFixedOMCost sheet from Storage.xlsx
+2025-06-29 13:17:28,312 - empire.core.reader - INFO - Reading EnergyInitialCapacity sheet from Storage.xlsx
+2025-06-29 13:17:28,332 - empire.core.reader - INFO - Reading EnergyMaxBuiltCapacity sheet from Storage.xlsx
+2025-06-29 13:17:28,341 - empire.core.reader - INFO - Reading EnergyMaxInstalledCapacity sheet from Storage.xlsx
+2025-06-29 13:17:28,352 - empire.core.reader - INFO - Reading PowerMaxInstalledCapacity sheet from Storage.xlsx
+2025-06-29 13:17:28,367 - empire.core.reader - INFO - Reading Lifetime sheet from Storage.xlsx
+2025-06-29 13:17:28,382 - empire.core.empire - INFO - Solver: Gurobi
+2025-06-29 13:17:28,382 - empire.core.empire - INFO - Absolute emission cap in each scenario...
+2025-06-29 13:17:28,382 - empire.core.empire - INFO - Declaring sets...
+2025-06-29 13:17:28,384 - empire.core.empire - INFO - Reading sets...
+2025-06-29 13:17:28,409 - empire.core.empire - INFO - Constructing sub sets...
+2025-06-29 13:17:28,409 - empire.core.empire - INFO - Declaring parameters...
+2025-06-29 13:17:28,413 - empire.core.empire - INFO - Reading parameters...
+2025-06-29 13:17:28,413 - empire.core.empire - INFO - Reading parameters for Generator...
+2025-06-29 13:17:28,437 - empire.core.empire - INFO - Reading parameters for Transmission...
+2025-06-29 13:17:28,465 - empire.core.empire - INFO - Reading parameters for Storage...
+2025-06-29 13:17:28,479 - empire.core.empire - INFO - Reading parameters for Node...
+2025-06-29 13:17:28,484 - empire.core.empire - INFO - Reading parameters for Stochastic...
+2025-06-29 13:17:30,137 - empire.core.empire - INFO - Reading parameters for General...
+2025-06-29 13:17:30,139 - empire.core.empire - INFO - Constructing parameter values...
+2025-06-29 13:17:30,139 - empire.core.empire - INFO - Sets and parameters declared and read...
+2025-06-29 13:17:30,139 - empire.core.empire - INFO - Declaring variables...
+2025-06-29 13:17:30,142 - empire.core.empire - INFO - Objective and constraints read...
+2025-06-29 13:17:30,142 - empire.core.empire - INFO - Building instance...
+2025-06-29 13:17:58,926 - empire.core.empire - INFO - Building instance took [sec]: 28
+2025-06-29 13:17:58,926 - empire.core.empire - INFO - ----------------------Problem Statistics---------------------
+2025-06-29 13:17:58,926 - empire.core.empire - INFO - Nodes: 49
+2025-06-29 13:17:58,926 - empire.core.empire - INFO - Lines: 190
+2025-06-29 13:17:58,926 - empire.core.empire - INFO - 
+2025-06-29 13:17:58,926 - empire.core.empire - INFO - GeneratorTypes: 28
+2025-06-29 13:17:58,926 - empire.core.empire - INFO - TotalGenerators: 696
+2025-06-29 13:17:58,926 - empire.core.empire - INFO - StorageTypes: 2
+2025-06-29 13:17:58,927 - empire.core.empire - INFO - TotalStorages: 66
+2025-06-29 13:17:58,927 - empire.core.empire - INFO - 
+2025-06-29 13:17:58,927 - empire.core.empire - INFO - InvestmentUntil: 2030
+2025-06-29 13:17:58,927 - empire.core.empire - INFO - Scenarios: 2
+2025-06-29 13:17:58,927 - empire.core.empire - INFO - TotalOperationalHoursPerScenario: 144
+2025-06-29 13:17:58,927 - empire.core.empire - INFO - TotalOperationalHoursPerInvYear: 288
+2025-06-29 13:17:58,927 - empire.core.empire - INFO - Seasons: 6
+2025-06-29 13:17:58,927 - empire.core.empire - INFO - RegularSeasons: 4
+2025-06-29 13:17:58,927 - empire.core.empire - INFO - LengthRegSeason: 24
+2025-06-29 13:17:58,927 - empire.core.empire - INFO - PeakSeasons: 2
+2025-06-29 13:17:58,927 - empire.core.empire - INFO - LengthPeakSeason: 24
+2025-06-29 13:17:58,927 - empire.core.empire - INFO - 
+2025-06-29 13:17:58,927 - empire.core.empire - INFO - Discount rate: 0.05
+2025-06-29 13:17:58,927 - empire.core.empire - INFO - Operational discount scale: 4.54595050416236
+2025-06-29 13:17:58,927 - empire.core.empire - INFO - --------------------------------------------------------------
+2025-06-29 13:17:58,989 - empire.core.empire - INFO - Solving...
+2025-06-29 13:20:30,927 - empire.core.empire - INFO - Writing results to .csv...
+2025-06-29 13:21:54,566 - empire.core.empire - INFO - Computing operational dual values by fixing investment variables and resolving.
+2025-06-29 13:21:54,567 - empire.core.empire - INFO - Fixing investment variables
+2025-06-29 13:21:54,568 - empire.core.empire - INFO - Resolving
+2025-06-29 13:23:02,954 - empire.core.empire - INFO - Writing new operational results to .csv..
+2025-06-29 13:23:27,025 - empire.core.model_runner - INFO - Writing config to: /home/jorgenbs/OpenEmpire/Results/run_analysis/ncc8000.0_na0.95_w200000.0_wog200000.0_pTrue/Input/Xlsx/config.txt
