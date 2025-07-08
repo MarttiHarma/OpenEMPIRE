@@ -23,6 +23,8 @@ args = parser.parse_args()
 ## Read config and setup folders ##
 if args.dataset == "test":
     config = read_config_file(Path("config/testrun.yaml"))
+elif args.dataset =="uploads":
+    config = read_config_file(Path("config/ensolve_run.yaml"))#if we run the ensolve run, use this config
 else:
     config = read_config_file(Path(args.config_file))
 
