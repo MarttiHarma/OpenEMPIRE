@@ -29,12 +29,12 @@ SCHEDULER_SCRIPT=$(jq -r ".$CLUSTER.SCHEDULER_SCRIPT" $CONFIG_FILE)
 
 # Compress files while excluding certain directories on the local machine
 cd $LOCAL_DIR
-tar --exclude='./.*' \
-    --exclude='./Results/*/' \
-    --exclude='./docs/*/' \
-    --exclude='./notebooks/*/' \
-    --exclude='*__pycache__*' \
-    -cvzf myfiles.tar.gz *
+tar --exclude='./Results' \
+    --exclude='./docs' \
+    --exclude='./notebooks' \
+    --exclude='*/__pycache__' \
+    --exclude='.*' \
+    -cvzf myfiles.tar.gz .
     
 # Transfer the compressed file to the remote server
 scp myfiles.tar.gz $REMOTE_USER@$REMOTE_SERVER:$REMOTE_DIR

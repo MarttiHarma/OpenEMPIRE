@@ -1,7 +1,7 @@
 {
   "Solstorm": {
     "REMOTE_USER": "marttih",
-    "REMOTE_SERVER": "login.solstorm.ntnu.no",
+    "REMOTE_SERVER": "login-solstorm.ntnu.no",
     "REMOTE_DIR": "/home/marttih/empire/OpenEMPIRE",
     "SCHEDULER_SCRIPT": "./scripts/run_test_sge.sh"
   },
