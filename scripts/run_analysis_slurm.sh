@@ -35,7 +35,7 @@ MAX_WINDS=("0" "200000")
 for ncc in "${NUCLEAR_CAPITAL_COSTS[@]}"; do
     for na in "${NUCLEAR_AVAILABILITIES[@]}"; do
         for w in "${MAX_WINDS[@]}"; do
-            python run.py \
+            python scripts/run_analysis.py \
                 --nuclear-capital-cost $ncc \
                 --nuclear-availability $na \
                 --max-onshore-wind-norway $w \
