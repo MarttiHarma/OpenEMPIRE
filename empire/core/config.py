@@ -16,6 +16,7 @@ class EmpireConfiguration:
     def __init__(
         self,
         use_temporary_directory: bool,
+        automatic_file_transfer: bool,
         temporary_directory: str | Path,
         forecast_horizon_year: int,
         number_of_scenarios: int,
@@ -79,6 +80,7 @@ class EmpireConfiguration:
         """
         # Model parameters
         self.use_temporary_directory = use_temporary_directory
+        self.automatic_file_transfer = automatic_file_transfer
         self.temporary_directory = Path(temporary_directory).absolute()
         self.forecast_horizon_year = forecast_horizon_year
         self.number_of_scenarios = number_of_scenarios

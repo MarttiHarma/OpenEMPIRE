@@ -1,8 +1,9 @@
 use_temporary_directory: true
+automatic_file_transfer: true
 temporary_directory: ./
 forecast_horizon_year: 2030
 number_of_scenarios: 2
-length_of_regular_season: 168
+length_of_regular_season: 8
 discount_rate: 0.05
 wacc: 0.05
 optimization_solver: Gurobi
@@ -18,7 +19,7 @@ copulas_to_use:
 n_cluster: 10
 moment_matching: false
 n_tree_compare: 20
-use_emission_cap: true
+use_emission_cap: false
 compute_operational_duals: true
 print_in_iamc_format: false
 write_in_lp_format: false

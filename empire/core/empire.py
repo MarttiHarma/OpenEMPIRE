@@ -3,6 +3,7 @@ from __future__ import division
 import csv
 import logging
 import os
+import subprocess
 import sys
 import time
 from pathlib import Path
@@ -16,7 +17,7 @@ logger = logging.getLogger(__name__)
 
 
 def run_empire(name, tab_file_path: Path, result_file_path: Path, scenario_data_path,
-               solver, temp_dir, FirstHoursOfRegSeason, FirstHoursOfPeakSeason, lengthRegSeason,
+               solver, temp_dir, automatic_file_transfer, FirstHoursOfRegSeason, FirstHoursOfPeakSeason, lengthRegSeason,
                lengthPeakSeason, Period, Operationalhour, Scenario, Season, HoursOfSeason,
                discountrate, WACC, LeapYearsInvestment, IAMC_PRINT, WRITE_LP,
                PICKLE_INSTANCE, EMISSION_CAP, USE_TEMP_DIR, LOADCHANGEMODULE, OPERATIONAL_DUALS, north_sea, 
@@ -1459,5 +1460,28 @@ def run_empire(name, tab_file_path: Path, result_file_path: Path, scenario_data_
 
 
 
+
     ####################################################################
-    #run shell script which transfers files to computer
+    # Run shell script which transfers files to computer
+    if automatic_file_transfer:
+        base_dir = Path(__file__).resolve().parents[2]
+        path = base_dir / 'scripts' / 'transfer_files.sh'
+
+        if path.exists():
+            process = subprocess.Popen(
+                ["/bin/bash", str(path)],
+                stdout=subprocess.PIPE,
+                stderr=subprocess.STDOUT,
+                text=True
+            )
+
+            for line in process.stdout:
+                print(line, end="")
+
+            process.wait()
+            if process.returncode != 0:
+                print(f"\n Script failed with exit code {process.returncode}")
+            else:
+                print("\n Transfer script finished successfully!")
+        else:
+            print(f"Script not found at: {path}")

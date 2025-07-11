@@ -1,12 +1,13 @@
 #!/bin/bash
 
-if [ "$#" -ne 1 ]; then
-    echo "Usage: $(basename $0) <cluster_name>"
+if [ "$#" -ne 2 ]; then
+    echo "Usage: $(basename $0) <cluster_name> <run_name>"
     echo "Cluster name should be one of: Solstorm, IDUN"
     exit 1
 fi
 
 CLUSTER="$1"
+NAME="$2"
 
 # Specify directories and server details
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
@@ -60,7 +61,7 @@ ssh $REMOTE_USER@$REMOTE_SERVER "$REMOTE_DIR/scripts/filter_idle_hosts.sh 'compu
 
 if [[ $CLUSTER = "Solstorm" ]]; then
     echo "Starting SGE job!"
-    ssh $REMOTE_USER@$REMOTE_SERVER "cd $REMOTE_DIR && sh $SCHEDULER_SCRIPT"
+    ssh $REMOTE_USER@$REMOTE_SERVER "cd $REMOTE_DIR && sh $SCHEDULER_SCRIPT $NAME"
 elif [[ $CLUSTER = "IDUN" ]]; then
     echo "Starting SLURM job!"
     ssh $REMOTE_USER@$REMOTE_SERVER "sbatch $REMOTE_DIR/$SCHEDULER_SCRIPT"

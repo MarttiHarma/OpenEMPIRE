@@ -1,9 +1,7 @@
 #!/bin/bash
 set -x
-ncc=$1
-na=$2
-w=$3
-p=$4
+name=$1
+
 
 
 
@@ -21,6 +19,13 @@ if [[ "$CONDA_DEFAULT_ENV" != "empire_env" ]]; then
     fi
 fi
 
+
+
+if [ -z "$name" ]; then
+  echo "Usage: $0 <run_name>"
+  exit 1
+fi
+
 echo "Active conda env: "
 echo $CONDA_DEFAULT_ENV
 # Load modules and activate conda environment
@@ -30,7 +35,7 @@ pyomo help --version
 # Print which node we are running on
 echo "Running on compute node: $(hostname)"
 
-python scripts/run.py -d uploads
+python scripts/run.py -n $name -d uploads
 
 
 echo "Done with starting bash script!"

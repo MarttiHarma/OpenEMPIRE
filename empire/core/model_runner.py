@@ -32,6 +32,8 @@ def run_empire_model(
     len_reg_season = empire_config.length_of_regular_season
     discountrate = empire_config.discount_rate
     use_scen_generation = empire_config.use_scenario_generation
+    automatic_file_transfer = empire_config.automatic_file_transfer
+
 
     #############################
     ##Non configurable settings##
@@ -41,7 +43,6 @@ def run_empire_model(
     regular_seasons = empire_config.regular_seasons
     NoOfPeakSeason = empire_config.n_peak_seasons
     len_peak_season = empire_config.len_peak_season
-    discountrate = empire_config.discount_rate
     LeapYearsInvestment = empire_config.leap_years_investment
 
     workbook_path = run_config.dataset_path
@@ -127,6 +128,7 @@ def run_empire_model(
             scenario_data_path=scenario_data_path,
             solver=empire_config.optimization_solver,
             temp_dir=empire_config.temporary_directory,
+            automatic_file_transfer=empire_config.automatic_file_transfer,
             FirstHoursOfRegSeason=FirstHoursOfRegSeason,
             FirstHoursOfPeakSeason=FirstHoursOfPeakSeason,
             lengthRegSeason=len_reg_season,
